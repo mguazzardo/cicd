@@ -1,6 +1,6 @@
 node {
          stage('build') {
-           openshiftBuild(buildConfig: 'myprojectname', showBuildLogs: 'true')
+           openshiftBuild(buildConfig: 'pruebacicd', showBuildLogs: 'true')
          }
          stage('test') {
            sh('''python --version;''')
